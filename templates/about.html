@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body class="bg-radial from-[#1e1b4b] via-[#0f172a] to-[#020617] min-h-screen flex items-center justify-center font-sans antialiased text-slate-200">
+
+    <div class="w-full max-w-lg p-8 mx-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl shadow-black/50">
+        
+        <h2 class="text-2xl font-black tracking-tight text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text border-b border-white/10 pb-4 mb-6">
+            System Architecture & Developer Core Profile
+        </h2>
+
+        <!-- Professional Specification List -->
+        <div class="space-y-4 mb-8">
+            <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-lg border border-white/[0.05]">
+                <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Lead Engineer</span>
+                <span class="text-slate-200 font-bold text-sm tracking-wide">{{ name }}</span>
+            </div>
+            <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-lg border border-white/[0.05]">
+                <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Academic Foundation</span>
+                <span class="text-indigo-300 font-medium font-mono text-sm">{{ education }}</span>
+            </div>
+            <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-lg border border-white/[0.05]">
+                <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Technical Domain</span>
+                <span class="text-purple-300 font-medium text-sm">{{ specialization }}</span>
+            </div>
+            <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-lg border border-white/[0.05]">
+                <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Base Station</span>
+                <span class="text-slate-300 font-medium text-sm">{{ city }}</span>
+            </div>
+            <div class="flex justify-between items-center bg-white/[0.02] p-3 rounded-lg border border-white/[0.05]">
+                <span class="text-slate-400 text-xs font-semibold uppercase tracking-wider">Vision Roadmap</span>
+                <span class="text-pink-300 font-bold text-sm tracking-wide">🚀 Target: {{ goal }}</span>
+            </div>
+        </div>
+
+        <!-- Automated Tech Stack Badges -->
+        <h3 class="text-xs font-black tracking-widest text-slate-400 uppercase mb-3">Verified Infrastructure Stack</h3>
+        <div class="flex flex-wrap gap-2 mb-8">
+            {% for tool in tools %}
+            <span class="px-3 py-1.5 text-xs font-mono font-bold rounded-md bg-slate-800 text-indigo-300 border border-slate-700/50">
+                # {{ tool }}
+            </span>
+            {% endfor %}
+        </div>
+
+        <!-- Dashboard Return Link -->
+        <a href="/" class="inline-flex items-center justify-center w-full px-5 py-3 font-semibold text-slate-300 bg-white/5 border border-white/10 rounded-xl transition-all duration-200 hover:bg-white/10 hover:text-white">
+            ← Return to Gateway Dashboard
+        </a>
+    </div>
+
+</body>
+</html>
+

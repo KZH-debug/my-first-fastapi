@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <!-- Modern Tailwind CSS Utility Engine -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body class="bg-radial from-[#1e1b4b] via-[#0f172a] to-[#020617] min-h-screen flex items-center justify-center font-sans antialiased text-slate-200">
+
+    <div class="relative w-full max-w-md p-8 mx-4 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl shadow-black/50 text-center transition-all duration-300 hover:border-indigo-500/30">
+        
+        <!-- Live System Node Indicator -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold tracking-wider text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-full mb-6 animate-pulse">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            PORTAL SECURE & ONLINE
+        </div>
+
+        <!-- Your Name Branding -->
+        <h1 class="text-4xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-2">
+            {{ name }}
+        </h1>
+        
+        <!-- Your Professional Title -->
+        <h2 class="text-indigo-300 font-mono text-sm tracking-widest font-semibold uppercase mb-6">
+            // {{ role }}
+        </h2>
+        
+        <p class="text-slate-400 font-medium text-base leading-relaxed mb-8">
+            Welcome to my enterprise production-grade FastAPI gateway testing terminal. Explore my engineering background below.
+        </p>
+
+        <!-- Premium Navigation Button -->
+        <a href="/about" class="group relative inline-flex items-center justify-center w-full px-6 py-3.5 font-bold text-slate-900 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 rounded-xl overflow-hidden shadow-lg shadow-indigo-500/20 transition-all duration-300 hover:scale-[1.01] hover:shadow-indigo-500/30">
+            Explore Engineer Profile →
+        </a>
+    </div>
+
+</body>
+</html>
+
