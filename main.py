@@ -16,10 +16,11 @@ def disable_favicon():
 # 1. Main Homepage Pathway (/)
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request):
+    # FIX: Explicitly passing template_name first, then keyword context dictionary
     return templates.TemplateResponse(
-        "home.html", 
-        {
-            "request": request,
+        request=request,
+        name="home.html", 
+        context={
             "title": "KZH | Software Engineer",
             "name": "Kyaw Zaw Han",
             "role": "Python Backend & Software Engineer"
@@ -29,10 +30,11 @@ def home(request: Request):
 # 2. About Page Pathway (/about)
 @app.get("/about", response_class=HTMLResponse)
 def about_page(request: Request):
+    # FIX: Explicitly passing template_name first, then keyword context dictionary
     return templates.TemplateResponse(
-        "about.html", 
-        {
-            "request": request,
+        request=request,
+        name="about.html", 
+        context={
             "title": "About Kyaw Zaw Han",
             "name": "Kyaw Zaw Han (KZH)",
             "education": "B.A. Degree in Psychology",
